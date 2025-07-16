@@ -211,7 +211,7 @@ def currency_converter():
     amount = st.number_input("Enter the amount: ")
     to = st.selectbox("To Currency", options=['India ₹', 'United States $', 'euro €', 'Japanese Yen ¥', 'Russia ₽'])
     btn = st.button("CONVERT")
-    st.balloons()
+   
 
     convert = {
         'India ₹': 1.00,
@@ -347,7 +347,7 @@ def unsupervised():
         inertia.append(model.inertia_)
     print(inertia)
     fig, ax = plt.subplots()
-    ax.plot(inertia, marker='o', color='orange')
+    ax.plot(inertia, marker='o')
     ax.set_title("Elbow Method")
     ax.set_xlabel("Number of clusters")
     ax.set_ylabel("Inertia")
